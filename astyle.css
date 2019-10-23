@@ -1,0 +1,99 @@
+body, html {
+height: 100%;
+margin: 0;
+}
+
+.bgimg {
+background-image: url(https://think360studio.com/wp-content/uploads/2017/12/logic-bobby-tarantino.jpg);
+height: 100%;
+background-position: center;
+background-size: cover;
+position: relative;
+color: white;
+font-family: "Courier New", Courier, monospace;
+font-size: 25px;
+}
+
+.topleft {
+position: absolute;
+top: 0;
+left: 16px;
+}
+
+.bottomleft {
+position: absolute;
+bottom: 0;
+left: 16px;
+}
+
+.middle {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+hr {
+margin: auto;
+width: 40%;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: 	#DEB887;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 315px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
